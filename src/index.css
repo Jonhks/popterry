@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+:root {
+  --primario: #0063a2;
+  --secundario: #ff1224;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Aria";
+  src: url("./assets/fonts/Arial\ Bold.ttf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "central";
+  src: url("./assets/fonts/CentraleSansRegular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "cenzo";
+  src: url("./assets/fonts/CenzoFlare-Bold.ttf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "chillax-m";
+  src: url("./assets/fonts/Chillax-Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "chillax-s";
+  src: url("./assets/fonts/Chillax-SemiBold.otf") format("opentype");
+  font-weight: semibold;
+  font-style: normal;
+}
+
+.aria {
+  font-family: "Aria";
+}
+
+.centrale {
+  font-family: "central";
+}
+
+.cenzo {
+  font-family: "cenzo";
+}
+
+.chillax-m {
+  font-family: "chillax-m";
+}
+
+.chillax-s {
+  font-family: "chillax-s";
+}
