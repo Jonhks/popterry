@@ -15,7 +15,7 @@ const Navbar = () => {
           <svg
             className="w-8 h-8"
             fill="none"
-            stroke="currentColor"
+            stroke="white"
             viewBox="0 0 24 24"
           >
             <path
@@ -30,13 +30,13 @@ const Navbar = () => {
         <div className="hidden md:flex flex-1 justify-around space-x-6">
           <a
             href="#nosotros"
-            className="text-white hover:text-[var(--secundario)] chillax-m text-[20.29px] leading-[24.35px]"
+            className="text-white hover:text-blue-800 chillax-m text-[20.29px] leading-[24.35px]"
           >
             Nosotros
           </a>
           <a
             href="#productos"
-            className="text-white hover:text-[var(--secundario)] chillax-m text-[20.29px] leading-[24.35px]"
+            className="text-white hover:text-blue-800 chillax-m text-[20.29px] leading-[24.35px]"
           >
             Productos
           </a>
@@ -53,13 +53,13 @@ const Navbar = () => {
         <div className="hidden md:flex flex-1 justify-around space-x-6">
           <a
             href="#procesos"
-            className="text-white hover:text-[var(--secundario)] chillax-m text-[20.29px] leading-[24.35px]"
+            className="text-white hover:text-blue-800 chillax-m text-[20.29px] leading-[24.35px]"
           >
             Procesos
           </a>
           <a
             href="#contacto"
-            className="text-white hover:text-[var(--secundario)] chillax-m text-[20.29px] leading-[24.35px]"
+            className="text-white hover:text-blue-800 chillax-m text-[20.29px] leading-[24.35px]"
           >
             Contacto
           </a>
@@ -70,25 +70,25 @@ const Navbar = () => {
         <div className="md:hidden bg-[var(--primario)] px-4 pb-4 flex flex-col items-center animate-fade-in">
           <a
             href="#nosotros"
-            className="py-2 w-full text-center border-b border-white"
+            className="py-2 w-full text-center border-b border-white text-white"
           >
             Nosotros
           </a>
           <a
             href="#productos"
-            className="py-2 w-full text-center border-b border-white"
+            className="py-2 w-full text-center border-b border-white text-white"
           >
             Productos
           </a>
           <a
             href="#procesos"
-            className="py-2 w-full text-center border-b border-white"
+            className="py-2 w-full text-center border-b border-white text-white"
           >
             Procesos
           </a>
           <a
             href="#contacto"
-            className="py-2 w-full text-center"
+            className="py-2 w-full text-center text-white"
           >
             Contacto
           </a>
