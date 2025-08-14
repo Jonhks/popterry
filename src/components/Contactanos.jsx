@@ -1,4 +1,4 @@
-import React from "react";
+import toallas from "../assets/img/toallas.jpg";
 
 const Contactanos = () => (
   <section
@@ -12,7 +12,7 @@ const Contactanos = () => (
       {/* Imagen */}
       <div className="w-full md:w-1/2 flex justify-center mb-6 md:mb-0">
         <img
-          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
+          src={toallas}
           alt="Toallas"
           className="rounded-lg w-64 object-cover h-100"
         />
