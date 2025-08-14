@@ -5,7 +5,7 @@ const Contactanos = () => (
     id="contacto"
     className="py-12 px-4 bg-gray-100"
   >
-    <h2 className="text-3xl font-bold text-center mb-8 text-blue-800">
+    <h2 className="text-3xl font-bold text-center mb-2 text-[var(--primario)] uppercase md:text-[87.49px] font-[cenzo] mt-8">
       CONTÁCTANOS
     </h2>
     <div className="max-w-4xl mx-auto bg-white rounded-[40px] shadow-lg p-8 flex flex-col md:flex-row items-center gap-8">

@@ -4,7 +4,7 @@ import logo from "../assets/logo.png";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="w-full bg-[var(--primario)] text-white shadow-md">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-[var(--primario)]">
       <div className="max-w-7xl mx-auto px-4 flex items-center h-16">
         {/* Hamburguesa móvil */}
         <button

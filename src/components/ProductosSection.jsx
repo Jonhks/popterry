@@ -1,35 +1,39 @@
 import React from "react";
 import Card from "./Card";
+import toallasImg from "../assets/img/toallas.jpg";
+import hiloImg from "../assets/img/hilo.avif";
+import sabanasImg from "../assets/img/sabanas.jpg";
+import ecoImg from "../assets/img/hilo.png";
 
 const cardsData = [
   {
-    imagen: "https://via.placeholder.com/300x160?text=Producto+1",
+    imagen: toallasImg,
     texto: "TOALLAS",
-    boton: "Ver más",
+    boton: "Leer más",
   },
   {
-    imagen: "https://via.placeholder.com/300x160?text=Producto+2",
+    imagen: hiloImg,
     texto: "Hilo",
-    boton: "Ver más",
+    boton: "Leer más",
   },
   {
-    imagen: "https://via.placeholder.com/300x160?text=Producto+3",
+    imagen: sabanasImg,
     texto: "sábanas",
-    boton: "Ver más",
+    boton: "Leer más",
   },
   {
-    imagen: "https://via.placeholder.com/300x160?text=Producto+4",
+    imagen: ecoImg,
     texto: "eco",
-    boton: "Ver más",
+    boton: "Leer más",
   },
 ];
 
 const ProductosSection = () => (
   <section
     id="productos"
-    className="py-12 px-4 bg-blue-50"
+    className="py-12 px-4 w-[90%] justify-center mx-auto"
   >
-    <h2 className="text-3xl font-bold text-center mb-8 text-[var(--primario)] uppercase">
+    <h2 className="text-3xl font-bold text-center mb-8 text-[var(--primario)] uppercase md:text-[87.49px] font-[cenzo]">
       Nuestros Productos
     </h2>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 uppercase text-center">

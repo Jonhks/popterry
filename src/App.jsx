@@ -11,6 +11,9 @@ const App = () => {
       <Navbar />
       <Hero />
       <ProductosSection />
+      <h2 className="text-3xl font-bold text-center mb-2 text-[var(--primario)] uppercase md:text-[87.49px] font-[cenzo] mt-8">
+        Procesos Pop Terry
+      </h2>
       <ProcesosPopTerry />
       <Contactanos />
       <Footer />

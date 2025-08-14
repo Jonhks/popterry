@@ -5,7 +5,10 @@ import imagenHero from "../assets/model-placeholder.png"; // Cambia por tu image
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-[80vh] flex flex-col">
+    <section
+      id="nosotros"
+      className="relative w-full h-[80vh] flex flex-col"
+    >
       {/* Mitad superior */}
       <div className="absolute top-0 left-0 w-full h-1/2 bg-[var(--primario)] z-0" />
       {/* Mitad inferior */}
@@ -55,10 +58,10 @@ const Hero = () => {
         <img
           src={logo}
           alt="Logo"
-          className="h-16 w-16"
+          className="h-45 w-45 mx-7"
         />
         {/* <FaStar className="text-4xl text-blue-700 mb-2" /> */}
-        <p className="w-[50%] text-xl font-semibold text-blue-900">
+        <p className="w-[50%] text-xl font-light font-[verdana] text-[14px] md:text-[16px]">
           En POP TERRY nos enorgullecemos de ser una empresa mexicana
           comprometida con la calidad y la innovación, desarrollando productos
           que superan las expectativas de nuestros clientes. Gracias a nuestro
