@@ -5,25 +5,25 @@ const procesos = [
     numero: 1,
     titulo: "Hilatura",
     descripcion:
-      "Proceso en el cual se transforman los copos de algodón, en hilos finos de diferentes títulos (8, 12, 14, 20, etc.), utilizando procesos compactos de estiraje y torsión.",
+      "Iniciamos con fibras de algodón seleccionadas y las convertimos en hilos de alta resistencia y uniformidad. Este proceso nos permite tener control total desde el origen, garantizando la calidad en cada producto.",
   },
   {
     numero: 2,
     titulo: "Tejido",
     descripcion:
-      "Departamento en el cual se entrelaza, por medio de ligaduras diferentes tipos de dibujos, para poder crear tejidos uniformes en varias presentaciones; ya sea tejido plano o tejido rizo.",
+      "Nuestros telares transforman el hilo en estructuras textiles firmes, suaves y consistentes. Ya sea rizo o plano, cada tejido es diseñado para brindar confort, durabilidad y estilo.",
   },
   {
     numero: 3,
     titulo: "Acabado",
     descripcion:
-      "Desarrollo químico de descrude, blanqueo y teñido de las diferentes telas y toallas generadas en el departamento de Tejido, cuidando la suavidad de los productos.",
+      "Aplicamos procesos de limpieza, suavizado, teñido y fijado con estándares de calidad que aseguran que el color, la textura y la suavidad se mantengan con el tiempo. Cada pieza refleja el compromiso con la excelencia.",
   },
   {
     numero: 4,
     titulo: "Confección",
     descripcion:
-      "Proceso final, de corte, confección y etiquetado, para la presentación y entrega de nuestros productos acabados pasando por todo el proceso anterior.",
+      "Finalizamos con un armado minucioso: cortes precisos, costuras reforzadas y acabados que cuidan hasta el más mínimo detalle. Es aquí donde nace el producto que llega a tu hogar, listo para usarse y durar.",
   },
 ];
 

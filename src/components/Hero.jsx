@@ -68,14 +68,13 @@ const Hero = () => {
             className="h-45 w-45 mx-7"
           />
           {/* <FaStar className="text-4xl text-blue-700 mb-2" /> */}
-          <p className="w-[90%] md:w-[50%] text-xl font-light font-[verdana] text-[12px] md:text-[16px] p-2">
-            En POP TERRY nos enorgullecemos de ser una empresa mexicana
-            comprometida con la calidad y la innovación, desarrollando productos
-            que superan las expectativas de nuestros clientes. Gracias a nuestro
-            esfuerzo constante, hemos construido una sólida red comercial que
-            nos impulsa a seguir creciendo y posicionándonos como una marca
-            referente en la industria de snacks en México.{" "}
-          </p>
+          <div className="w-[90%] md:w-[50%] text-xl font-light font-[verdana] text-[12px] md:text-[16px] p-2">
+            <p className="font-bold mb-1">Textiles que abrazan tu día a día.</p>
+            En Pop Terry diseñamos y fabricamos toallas, sábanas y batas con
+            calidad superior, desde el hilo hasta el empaque. Somos una marca
+            100% mexicana que pone el confort, la durabilidad y el estilo al
+            alcance de tu hogar.
+          </div>
         </div>
       </section>
     </Motion>
