@@ -43,11 +43,13 @@ const Navbar = () => {
         </div>
         {/* Logo centrado */}
         <div className="flex justify-center flex-shrink-0 mx-4 md:mx-8">
-          <img
-            src={logo}
-            alt="Logo"
-            className="h-14 w-14 md:h-20 md:w-20"
-          />
+          <a href="#nosotros">
+            <img
+              src={logo}
+              alt="Logo"
+              className="h-14 w-14 md:h-20 md:w-20"
+            />
+          </a>
         </div>
         {/* Secciones derecha */}
         <div className="hidden md:flex flex-1 justify-around space-x-6">
@@ -71,24 +73,28 @@ const Navbar = () => {
           <a
             href="#nosotros"
             className="py-2 w-full text-center border-b border-white text-white"
+            onClick={() => setOpen(!open)}
           >
             Nosotros
           </a>
           <a
             href="#productos"
             className="py-2 w-full text-center border-b border-white text-white"
+            onClick={() => setOpen(!open)}
           >
             Productos
           </a>
           <a
             href="#procesos"
             className="py-2 w-full text-center border-b border-white text-white"
+            onClick={() => setOpen(!open)}
           >
             Procesos
           </a>
           <a
             href="#contacto"
             className="py-2 w-full text-center text-white"
+            onClick={() => setOpen(!open)}
           >
             Contacto
           </a>

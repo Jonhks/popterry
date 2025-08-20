@@ -18,9 +18,9 @@ const Footer = () => (
           className="h-16 w-auto mb-2"
         />
         <p className="font-[verdana] tracking-[.1em]">
-          Galeana #403, San Lorenzo Almecatla Mun. Cuatlancingo, Edo. de Puebla
+          Galeana #403, San Lorenzo Almecatla Mun. Cuatlancingo,
         </p>
-        <p> C.P. 72710</p>
+        <p> Edo. de Puebla C.P. 72710</p>
       </div>
       {/* WhatsApp */}
       <div className="flex-1 order-3 md:order-3">
