@@ -10,14 +10,14 @@ import Modal from "./Modal";
 const cardsData = [
   {
     imagen: toallasImg,
-    texto: "TOALLAS para baño",
+    texto: "TOALLAS",
     boton: "Leer más",
     descripcion:
       "Disfruta la suavidad y absorción que tu piel merece. Nuestras toallas están hechas con algodón de alta calidad, ideales para el uso diario y con diseños que combinan con cualquier estilo de baño. Calidad que se nota, desde el primer uso.",
   },
   {
     imagen: bataImg,
-    texto: "Batas de baño",
+    texto: "Batas",
     boton: "Leer más",
     descripcion:
       "Confort total al salir de la ducha. Las batas Pop Terry están elaboradas con tejidos esponjosos, ligeros y resistentes, para brindarte la sensación de un spa en casa. Disponibles en tallas y colores para toda la familia.",
@@ -62,7 +62,7 @@ const ProductosSection = () => {
         id="productos"
         className="py-12 px-4 w-[90%] justify-center mx-auto"
       >
-        <h2 className="text-3xl font-bold text-center mb-8 text-[var(--primario)] uppercase md:text-[87.49px] font-[cenzo]">
+        <h2 className="text-2xl font-bold text-center mb-8 text-[var(--primario)] uppercase md:text-5xl font-[cenzo] tracking-[.1em]">
           Nuestros Productos
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 uppercase text-center">

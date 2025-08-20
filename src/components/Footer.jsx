@@ -3,29 +3,28 @@ import logo from "../assets/logo.png"; // Cambia la ruta si tu logo es diferente
 
 const Footer = () => (
   <footer className="bg-[var(--primario)] py-8 px-4">
-    <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between text-white text-center gap-8 md:gap-0">
+    <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-end justify-between text-white text-center gap-8 md:gap-0">
       {/* Contacto */}
-      <div className="flex-1">
-        <p className="font-bold mb-1">CONTÁCTANOS</p>
+      <div className="flex-1 order-2 md:order-1">
+        <p className="mb-1 font-[verdana] tracking-[.1em]">CONTÁCTANOS</p>
         <p>(222)2 81 08 94</p>
         <p>(+52) 2222 81 08 94</p>
       </div>
       {/* Logo */}
-      <div className="flex-1 flex flex-col items-center justify-center">
+      <div className="flex-1 flex flex-col items-center justify-center order-1 md:order-2">
         <img
           src={logo}
           alt="Logo Pop Terry"
           className="h-16 w-auto mb-2"
         />
-        <p className="font-bold">
-          Dirección: Galeana No 403 San Lorenzo Almecatla Municipio Cuatlancingo
-          Estado de Puebla
+        <p className="font-[verdana] tracking-[.1em]">
+          Galeana #403, San Lorenzo Almecatla Mun. Cuatlancingo, Edo. de Puebla
         </p>
-        <p> Cod Postal 72710</p>
+        <p> C.P. 72710</p>
       </div>
       {/* WhatsApp */}
-      <div className="flex-1">
-        <p className="font-bold mb-1">ESCRÍBENOS</p>
+      <div className="flex-1 order-3 md:order-3">
+        <p className="mb-1 font-[verdana] tracking-[.1em]">ESCRÍBENOS</p>
         <div className="flex items-center justify-center gap-2 hover:cursor-pointer">
           <a
             href="https://wa.me/522222810894"

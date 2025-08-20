@@ -5,7 +5,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-[var(--primario)]">
-      <div className="max-w-7xl mx-auto px-4 flex items-center h-16">
+      <div className="max-w-7xl mx-auto px-4 flex items-center md:h-22 h-16 justify-between md:justify-around">
         {/* Hamburguesa móvil */}
         <button
           className="md:hidden mr-2 focus:outline-none"
@@ -30,15 +30,15 @@ const Navbar = () => {
         <div className="hidden md:flex flex-1 justify-around space-x-6">
           <a
             href="#nosotros"
-            className="text-white hover:text-blue-800 chillax-m text-[20.29px] leading-[24.35px]"
+            className="text-white hover:underline underline-offset-4 chillax-l text-[.8rem] tracking-[.3rem]"
           >
-            Nosotros
+            NOSOTROS
           </a>
           <a
             href="#productos"
-            className="text-white hover:text-blue-800 chillax-m text-[20.29px] leading-[24.35px]"
+            className="text-white hover:underline underline-offset-4 chillax-l text-[.8rem] tracking-[.3rem]"
           >
-            Productos
+            PRODUCTOS
           </a>
         </div>
         {/* Logo centrado */}
@@ -53,15 +53,15 @@ const Navbar = () => {
         <div className="hidden md:flex flex-1 justify-around space-x-6">
           <a
             href="#procesos"
-            className="text-white hover:text-blue-800 chillax-m text-[20.29px] leading-[24.35px]"
+            className="text-white hover:underline underline-offset-4 chillax-l text-[.8rem] tracking-[.3rem]"
           >
-            Procesos
+            PROCESOS
           </a>
           <a
             href="#contacto"
-            className="text-white hover:text-blue-800 chillax-m text-[20.29px] leading-[24.35px]"
+            className="text-white hover:underline underline-offset-4 chillax-l text-[.8rem] tracking-[.3rem]"
           >
-            Contacto
+            CONTACTO
           </a>
         </div>
       </div>

@@ -28,14 +28,14 @@ const procesos = [
 ];
 
 const ProcesoCard = ({ numero, titulo, descripcion }) => (
-  <div className="relative bg-white rounded-[40px] shadow-lg p-6 pt-10 flex flex-col items-center text-center min-h-[220px]">
-    <div className="absolute -top-7 left-1/2 -translate-x-1/2 w-14 h-14 flex items-center justify-center rounded-full bg-[var(--primario)] text-white text-2xl font-bold shadow-lg border-4 border-white">
+  <div className="relative bg-white rounded-[40px] shadow-lg p-6 pt-2 md:pt-10 flex flex-col items-center text-center min-h-[220px] mb-6">
+    <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-15 h-15 md:w-20 md:h-20 flex items-center justify-center rounded-full bg-[var(--primario)] text-white text-2xl md:text-4xl font-bold shadow-lg border-4 border-white">
       {numero}
     </div>
-    <h3 className="mt-6 mb-2 text-lg font-bold tracking-widest text-[var(--primario)]">
+    <h3 className="mt-6 mb-2 text-1xl md:text-2xl text-[var(--primario)] tracking-[.2em]">
       {titulo.toUpperCase()}
     </h3>
-    <p className="text-[var(--primario)] text-sm leading-relaxed">
+    <p className="text-[var(--primario)] text-sm md:text-md leading-relaxed">
       {descripcion}
     </p>
   </div>
