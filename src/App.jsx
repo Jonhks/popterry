@@ -1,9 +1,11 @@
+import React from "react";
 import Hero from "./components/Hero";
 import Navbar from "./components/NavBar";
 import ProductosSection from "./components/ProductosSection";
 import ProcesosPopTerry from "./components/ProcesosPopTerry";
 import Contactanos from "./components/Contactanos";
 import Footer from "./components/Footer";
+import Modal from "./components/Modal";
 
 const App = () => {
   return (
@@ -17,6 +19,11 @@ const App = () => {
       <ProcesosPopTerry />
       <Contactanos />
       <Footer />
+      {/* <Modal
+        open={open}
+        handleOpen={handleOpen}
+        handleClose={handleClose}
+      /> */}
     </>
   );
 };

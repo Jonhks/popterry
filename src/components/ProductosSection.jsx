@@ -11,28 +11,28 @@ const cardsData = [
   {
     imagen: toallasImg,
     texto: "TOALLAS",
-    boton: "Leer más",
+    boton: "LEER MÁS",
     descripcion:
       "Disfruta la suavidad y absorción que tu piel merece. Nuestras toallas están hechas con algodón de alta calidad, ideales para el uso diario y con diseños que combinan con cualquier estilo de baño. Calidad que se nota, desde el primer uso.",
   },
   {
     imagen: bataImg,
     texto: "Batas",
-    boton: "Leer más",
+    boton: "LEER MÁS",
     descripcion:
       "Confort total al salir de la ducha. Las batas Pop Terry están elaboradas con tejidos esponjosos, ligeros y resistentes, para brindarte la sensación de un spa en casa. Disponibles en tallas y colores para toda la familia.",
   },
   {
     imagen: sabanasImg,
     texto: "sábanas",
-    boton: "Leer más",
+    boton: "LEER MÁS",
     descripcion:
       "Transforma tu descanso con sábanas frescas, suaves y duraderas. Diseñadas para ajustarse perfectamente y conservar su textura lavado tras lavado. La comodidad ideal para dormir mejor, noche tras noche.",
   },
   {
     imagen: hiloImg,
     texto: "Hilo",
-    boton: "Leer más",
+    boton: "LEER MÁS",
     descripcion:
       "Nuestros hilos de algodón son el corazón de cada pieza Pop Terry. Elaborados con procesos de alta precisión para asegurar consistencia, resistencia y la mejor base textil para cualquier desarrollo.",
   },
@@ -41,15 +41,13 @@ const cardsData = [
 const Motion = motion.section;
 
 const ProductosSection = () => {
-  const [modalOpen, setModalOpen] = useState(false);
-  const [modalContent, setModalContent] = useState({});
+  const [open, setOpen] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState(null);
 
-  const handleOpenModal = (card) => {
-    setModalContent(card);
-    setModalOpen(true);
+  const handleOpen = (product) => {
+    setSelectedProduct(product);
+    setOpen(true);
   };
-
-  const handleCloseModal = () => setModalOpen(false);
 
   return (
     <Motion
@@ -70,18 +68,15 @@ const ProductosSection = () => {
             <Card
               key={idx}
               {...card}
-              onButtonClick={() => handleOpenModal(card)}
+              onButtonClick={() => handleOpen(card)}
             />
           ))}
         </div>
-        {modalOpen && (
-          <Modal
-            imagen={modalContent.imagen}
-            texto={modalContent.texto}
-            descripcion={modalContent.descripcion}
-            onClose={handleCloseModal}
-          />
-        )}
+        <Modal
+          open={open}
+          onClose={setOpen}
+          selectedProduct={selectedProduct}
+        ></Modal>
       </section>
     </Motion>
   );

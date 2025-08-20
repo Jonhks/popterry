@@ -1,32 +1,63 @@
-import React from "react";
-import { motion } from "framer-motion";
+import * as React from "react";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import Modal from "@mui/material/Modal";
 
-const Motion = motion.div;
+const style = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: 400,
+  bgcolor: "background.paper",
+  border: "2px solid #000",
+  boxShadow: 24,
+  p: 4,
+  borderRadius: "20px",
+};
 
-const Modal = ({ imagen, texto, descripcion, onClose }) => (
-  <div className="fixed inset-0 bg-white bg-opacity-60 flex items-center justify-center z-50">
-    <Motion
-      initial={{ opacity: 0, scale: 0.95 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.3 }}
-      className="relative bg-[var(--primario)] rounded-lg p-8 max-w-md w-full flex flex-col items-center"
-    >
-      <button
-        className="absolute top-[-8px] right-2 text-[36px] text-white"
-        onClick={onClose}
+export default function BasicModal({ open, onClose, selectedProduct }) {
+  return (
+    <div>
+      <Modal
+        open={open}
+        onClose={() => onClose(false)}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
       >
-        &times;
-      </button>
-      <div
-        className="w-full h-48 bg-cover bg-center rounded-lg mb-4"
-        style={{ backgroundImage: `url(${imagen})` }}
-      />
-      <h2 className="text-3xl font-bold mb-2 text-white uppercase">{texto}</h2>
-      <p className="text-white font-light text-[18px] text-justify">
-        {descripcion}
-      </p>
-    </Motion>
-  </div>
-);
-
-export default Modal;
+        <Box
+          sx={{
+            ...style,
+            width: { xs: "80vw", md: 400 }, // 80% en mobile, 400px en md y arriba
+          }}
+        >
+          <div
+            className="w-full h-48 bg-cover bg-center rounded-lg mb-4"
+            style={{ backgroundImage: `url(${selectedProduct?.imagen})` }}
+          />
+          <Typography
+            id="modal-modal-title"
+            variant="h6"
+            component="h2"
+            className="text-lg font-semibold text-center"
+            style={{ fontSize: "24px", fontWeight: "bold" }}
+          >
+            {selectedProduct?.texto?.toUpperCase()}
+          </Typography>
+          <Typography
+            id="modal-modal-description"
+            sx={{
+              mt: 2,
+              fontSize: { xs: "14px", md: "16px" },
+              fontWeight: "normal",
+              textAlign: "center",
+            }}
+          >
+            {selectedProduct?.descripcion}
+          </Typography>
+        </Box>
+      </Modal>
+    </div>
+  );
+}
