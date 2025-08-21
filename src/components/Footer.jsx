@@ -59,7 +59,7 @@ const Footer = () => (
                 ></path>
               </svg>
             </span>
-            <span>5561660437</span>
+            <span>55 6166 0437</span>
           </a>
         </div>
       </div>
