@@ -27,7 +27,7 @@ const Footer = () => (
         <p className="mb-1 font-[verdana] tracking-[.1em]">ESCRÍBENOS</p>
         <div className="flex items-center justify-center gap-2 hover:cursor-pointer">
           <a
-            href="https://wa.me/522222810894"
+            href="https://wa.me/5561660437"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-green-500 text-white px-4 py-2 rounded-full flex items-center gap-2"
