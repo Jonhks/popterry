@@ -16,21 +16,21 @@ const Hero = () => {
     >
       <section
         id="nosotros"
-        className="relative w-full h-[80vh] flex flex-col"
+        className="relative w-full h-[80vh] landscape:h-[150vh] flex flex-col"
       >
         {/* Mitad superior */}
         <div className="absolute top-0 left-0 w-full h-1/2 bg-[var(--primario)] z-0" />
         {/* Mitad inferior */}
-        <div className="absolute bottom-0 left-0 w-full h-1/2  z-0" />
+        <div className="absolute bottom-0 left-0 w-full h-1/2 z-0" />
 
         {/* Contenido superior */}
         <div className="relative z-10 flex flex-1 items-center justify-center px-8 py-[2rem] mt-[2.5rem] md:w-[95%] md:mx-auto">
           {/* Texto a la izquierda */}
-          <div className=" w-1/2 md:w-1/3 text-left md:pl-[8rem]">
+          <div className=" w-1/2 md:w-1/3 text-left md:pl-[8rem] l">
             <h1 className="text-2xl font-bold text-white drop-shadow-lg font-[cenzo] md:text-[50px]">
               COMODIDAD
             </h1>
-            <span className="mt-1 text-[12px] text-white drop-shadow p-1 pt-1 px-2 rounded-[50px] bg-[var(--secundario)] font-[chillax-m] md:text-[18px] leading-[29.04px] tracking-[.1em] md:tracking-[.5em]">
+            <span className="mt-1 text-[12px] text-white drop-shadow p-1 pt-1 px-2 rounded-[50px] bg-[var(--secundario)] font-[chillax-m] md:text-[18px] landscape:text-sm leading-[29.04px] tracking-[.1em] md:tracking-[.5em]">
               PARA TODA LA
             </span>
             <p className="mt-1 text-[16px] text-white drop-shadow font-[cenzo] md:text-[45px]">
@@ -50,7 +50,7 @@ const Hero = () => {
                 left: "50%",
                 transform: isMobile
                   ? "translate(-35%, -50%)"
-                  : "translate(-50%, -30%)",
+                  : "translate(-50%, -27%)",
               }}
             />
           </div>
