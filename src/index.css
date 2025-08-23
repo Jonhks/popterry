@@ -63,3 +63,9 @@ html {
 .chillax-s {
   font-family: "chillax-s";
 }
+
+@media (orientation: landscape) and (max-width: 767px) {
+  #nosotros {
+    height: 140vh !important;
+  }
+}

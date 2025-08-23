@@ -16,7 +16,7 @@ const Hero = () => {
     >
       <section
         id="nosotros"
-        className="relative w-full h-[80vh] landscape:h-[150vh] flex flex-col"
+        className="relative w-full h-[80vh] flex flex-col"
       >
         {/* Mitad superior */}
         <div className="absolute top-0 left-0 w-full h-1/2 bg-[var(--primario)] z-0" />
