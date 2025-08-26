@@ -26,7 +26,10 @@ const Hero = () => {
         {/* Contenido superior */}
         <div className="relative z-10 flex flex-1 items-center justify-center px-8 py-[2rem] mt-[2.5rem] md:w-[95%] md:mx-auto">
           {/* Texto a la izquierda */}
-          <div className=" w-1/2 md:w-1/3 text-left md:pl-[8rem] l">
+          <div
+            id="texto-izquierda"
+            className=" w-1/2 md:w-1/3 text-left md:pl-[8rem]"
+          >
             <h1 className="text-2xl font-bold text-white drop-shadow-lg font-[cenzo] md:text-[50px]">
               COMODIDAD
             </h1>
@@ -59,17 +62,20 @@ const Hero = () => {
             <img
               src={logo}
               alt="Logo"
-              className="h-30 w-30 md:h-50 md:w-50"
+              className="h-25 w-auto md:h-42 md:w-50"
             />
           </div>
         </div>
 
         {/* Contenido inferior */}
-        <div className="relative z-10 flex flex-col md:flex-row items-center justify-center h-1/2 pt-6 md:pt-34">
+        <div
+          id="contenido-inferior"
+          className="relative z-10 flex flex-col md:flex-row items-center justify-center h-1/2 pt-6 md:pt-34"
+        >
           <img
             src={logo}
             alt="Logo"
-            className=" h-30 w-30 md:h-45 md:w-45 mx-7"
+            className=" h-25 w-auto md:h-38 md:w-45 mx-7"
           />
           {/* <FaStar className="text-4xl text-blue-700 mb-2" /> */}
           <div className="w-[90%] md:w-[50%] text-xl font-light font-[verdana] text-[12px] md:text-[16px] p-2 text-center md:text-justify">

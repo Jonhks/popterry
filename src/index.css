@@ -64,8 +64,15 @@ html {
   font-family: "chillax-s";
 }
 
-@media (orientation: landscape) and (max-width: 767px) {
+@media (orientation: landscape) and (max-width: 900px) {
   #nosotros {
-    height: 140vh !important;
+    height: 170vh !important;
+  }
+  #contenido-inferior {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  #texto-izquierda {
+    padding: 0;
   }
 }
